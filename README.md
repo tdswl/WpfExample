@@ -1,1 +1,1 @@
-# Simple WPF application with MMVM Light
+# Simple WPF application with MVVM Light
