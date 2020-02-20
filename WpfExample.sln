@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfExample.UI", "WpfExample.UI\WpfExample.UI.csproj", "{29A1D2FD-031B-49E9-9CE6-FB3CDCB4D267}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfExample.DAL", "WpfExample.DAL\WpfExample.DAL.csproj", "{F68BA6E5-6E26-4A06-868F-D32D93145203}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29A1D2FD-031B-49E9-9CE6-FB3CDCB4D267}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29A1D2FD-031B-49E9-9CE6-FB3CDCB4D267}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29A1D2FD-031B-49E9-9CE6-FB3CDCB4D267}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29A1D2FD-031B-49E9-9CE6-FB3CDCB4D267}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F68BA6E5-6E26-4A06-868F-D32D93145203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F68BA6E5-6E26-4A06-868F-D32D93145203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F68BA6E5-6E26-4A06-868F-D32D93145203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F68BA6E5-6E26-4A06-868F-D32D93145203}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
