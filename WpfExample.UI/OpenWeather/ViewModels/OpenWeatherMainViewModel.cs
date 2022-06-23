@@ -3,7 +3,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using AsyncAwaitBestPractices.MVVM;
-using GalaSoft.MvvmLight;
+using Microsoft.Toolkit.Mvvm.ComponentModel;
 using WpfExample.DAL.OpenWeather.Models;
 using WpfExample.DAL.OpenWeather.Services;
 
@@ -12,7 +12,7 @@ namespace WpfExample.UI.OpenWeather.ViewModels
     /// <summary>
     /// Base VM for weather
     /// </summary>
-    public class OpenWeatherMainViewModel : ViewModelBase, IDisposable
+    public class OpenWeatherMainViewModel : ObservableRecipient, IDisposable
     {
         private readonly HttpClient _client;
         private readonly IOpenWeatherMapService _openWeatherMapService;
@@ -22,7 +22,7 @@ namespace WpfExample.UI.OpenWeather.ViewModels
         public WeatherData WeatherData
         {
             get { return _weatherData; }
-            set { Set(ref _weatherData, value); }
+            set { SetProperty(ref _weatherData, value); }
         }
         
         private bool _isBusy;
@@ -32,7 +32,7 @@ namespace WpfExample.UI.OpenWeather.ViewModels
         public bool IsBusy
         {
             get { return _isBusy; }
-            set { Set(ref _isBusy, value); }
+            set { SetProperty(ref _isBusy, value); }
         }
         
         private ICommand _getWeatherDataCommand;
