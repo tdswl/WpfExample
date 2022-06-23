@@ -1,15 +1,16 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
+        <Nullable>enable</Nullable>
         <OutputType>WinExe</OutputType>
-        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <TargetFramework>net6.0-windows</TargetFramework>
         <UseWPF>true</UseWPF>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="AsyncAwaitBestPractices.MVVM" Version="4.1.0" />
-      <PackageReference Include="CommonServiceLocator" Version="2.0.5" />
-      <PackageReference Include="MvvmLightLibs" Version="5.4.1.1" />
+      <PackageReference Include="AsyncAwaitBestPractices.MVVM" Version="6.0.4" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+      <PackageReference Include="Microsoft.Toolkit.Mvvm" Version="7.1.2" />
     </ItemGroup>
 
     <ItemGroup>

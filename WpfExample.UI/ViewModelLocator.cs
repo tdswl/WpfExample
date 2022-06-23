@@ -1,6 +1,5 @@
-using CommonServiceLocator;
-using GalaSoft.MvvmLight;
-using GalaSoft.MvvmLight.Ioc;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Toolkit.Mvvm.DependencyInjection;
 using WpfExample.UI.OpenWeather.ViewModels;
 
 namespace WpfExample.UI
@@ -15,26 +14,15 @@ namespace WpfExample.UI
         /// </summary>
         public ViewModelLocator()
         {
-            ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
-
-            if (ViewModelBase.IsInDesignModeStatic)
-            {
-                
-            }
-            else
-            {
-                
-            }
-
-            SimpleIoc.Default.Register<OpenWeatherMainViewModel>();
+            Ioc.Default.ConfigureServices(
+                new ServiceCollection()
+                    .AddSingleton<OpenWeatherMainViewModel>()
+                    .BuildServiceProvider());
         }
 
         /// <summary>
         /// Main weather VM
         /// </summary>
-        public OpenWeatherMainViewModel OpenWeatherMain
-        {
-            get { return SimpleIoc.Default.GetInstance<OpenWeatherMainViewModel>(); }
-        }
+        public OpenWeatherMainViewModel? OpenWeatherMain => Ioc.Default.GetService<OpenWeatherMainViewModel>();
     }
 }
