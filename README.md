@@ -1,1 +1,1 @@
-# Simple WPF application with MVVM Light
+# Simple WPF application with Microsoft.Toolkit.Mvvm
