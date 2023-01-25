@@ -3,14 +3,13 @@
     <PropertyGroup>
         <Nullable>enable</Nullable>
         <OutputType>WinExe</OutputType>
-        <TargetFramework>net6.0-windows</TargetFramework>
+        <TargetFramework>net7.0-windows</TargetFramework>
         <UseWPF>true</UseWPF>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="AsyncAwaitBestPractices.MVVM" Version="6.0.4" />
-      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
-      <PackageReference Include="Microsoft.Toolkit.Mvvm" Version="7.1.2" />
+      <PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
     </ItemGroup>
 
     <ItemGroup>

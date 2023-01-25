@@ -1,5 +1,5 @@
+using CommunityToolkit.Mvvm.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Toolkit.Mvvm.DependencyInjection;
 using WpfExample.UI.OpenWeather.ViewModels;
 
 namespace WpfExample.UI
